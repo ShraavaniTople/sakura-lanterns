@@ -1,3 +1,11 @@
+Here’s the **complete `index.html`** with:
+
+* **No star (✨) emoji** anywhere.
+* **Stars visual restored** (since you meant only the emoji).
+* **AdSense removed** (kept a clean decorative banner without emojis).
+* **Your name** in the footer.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-
-  <!-- AdSense (enable after approval: replace IDs and UNCOMMENT) -->
-  <!--
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-CLIENT-ID" crossorigin="anonymous"></script>
-  -->
 </head>
 <body>
   <div class="wrap">
@@ -25,28 +28,16 @@
       <button id="createBtn" class="ghost small hidden">Create your own</button>
     </header>
 
-    <!-- Ad area: shows a cute placeholder until AdSense is enabled -->
-    <div class="ad-frame" aria-label="Advertisement">
-      <!-- Remove this placeholder after you paste AdSense unit below -->
+    <!-- Decorative banner (no ads, no emojis) -->
+    <div class="ad-frame" aria-label="Announcement">
       <div class="ad-placeholder">
-        <div class="ad-pill">Your ad can appear here</div>
-        <div class="ad-sub">Paste your AdSense code once approved</div>
+        <div class="ad-pill">Welcome to Sakura Lanterns</div>
+        <div class="ad-sub">Write a note, choose a theme, and share a floating wish.</div>
       </div>
-
-      <!-- AdSense unit (uncomment & replace IDs when ready) -->
-      <!--
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-YOUR-CLIENT-ID"
-           data-ad-slot="YOUR-SLOT-ID"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      -->
     </div>
 
     <main id="composer" class="card glass">
-      <h1>Make a colorful floating wish ✨</h1>
+      <h1>Make a colorful floating wish</h1>
       <p class="muted">Pick a theme, write your note, and share the link. No sign-in, no backend.</p>
 
       <form id="form" class="grid">
@@ -120,3 +111,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+```
