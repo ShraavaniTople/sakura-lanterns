@@ -1,4 +1,4 @@
-/* ——— Sakura Lanterns: Colorful upgrade ——— */
+/* ——— Sakura Lanterns: Colorful, clean ——— */
 :root{
     --text: #3d3550;
     --muted: #6d6280;
@@ -31,8 +31,9 @@
   }
   .brand{ font-weight:600; letter-spacing:.3px }
   
+  /* tightened spacing (margin reduced since banner removed) */
   .card{
-    width:min(860px, 92vw); margin:28px auto; padding:22px 20px;
+    width:min(860px, 92vw); margin:18px auto; padding:22px 20px;
     background:var(--card); border:1px solid var(--border); border-radius:18px;
     box-shadow:var(--shadow);
   }
@@ -58,20 +59,6 @@
   .actions{ display:flex; gap:12px; margin-top:6px }
   .actions.center{ justify-content:center }
   .right{ text-align:right }
-  
-  /* ——— Ad area ——— */
-  .ad-frame{
-    width:min(860px,92vw); margin:10px auto 0; padding:10px;
-    background:linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.5));
-    border:1px dashed var(--border); border-radius:14px
-  }
-  .ad-placeholder{ text-align:center; padding:12px 10px }
-  .ad-pill{
-    display:inline-block; padding:6px 12px; border-radius:999px;
-    background:linear-gradient(90deg,#ffe1f0,#fff0d8);
-    border:1px solid var(--border); font-size:13px
-  }
-  .ad-sub{ color:var(--muted); font-size:12px; margin-top:6px }
   
   /* ——— Stage / animated sky ——— */
   .stage{
@@ -141,7 +128,7 @@
   .lantern.lilac{ background: linear-gradient(#e6d8ff, #c3a5ff) }
   .lantern.pearl{ background: linear-gradient(#ffffff, #f0f4ff) }
   
-  /* ——— Particles (petals/stars/sparks) with parallax ——— */
+  /* ——— Particles ——— */
   .particle{
     position:absolute; opacity:.9; will-change: transform, opacity;
     animation: floatUp var(--p-dur) linear forwards;
@@ -164,7 +151,7 @@
   .message-card p{ font-size:18px; margin:6px 0 }
   .tofrom{ color:var(--muted); font-size:14px }
   
-  /* ——— Themes (extra colorful) ——— */
+  /* ——— Themes ——— */
   .theme-sakura .sky-grad{
     background: radial-gradient(900px 520px at 50% 100%, #ffe6f2 0%, #ffdff4 40%, #f2f0ff 72%, #f7fbff 100%);
   }
