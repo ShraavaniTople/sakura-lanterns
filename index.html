@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sakura Lanterns — Send a Pastel Floating Wish</title>
+  <meta name="description" content="Create a pastel sky lantern with sakura petals and share a link. Aesthetic, clean, and free." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AdSense placeholder (uncomment after approval and replace IDs) -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-CLIENT-ID" crossorigin="anonymous"></script>
+  -->
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <div class="brand">🌸 Sakura&nbsp;Lanterns</div>
+      <button id="createBtn" class="ghost small hidden">Create your own</button>
+    </header>
+
+    <!-- Aesthetic ad area (paste AdSense code here after approval) -->
+    <div class="ad-frame" aria-label="Advertisement">
+      <!--
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-YOUR-CLIENT-ID"
+           data-ad-slot="YOUR-SLOT-ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <div class="ad-placeholder">Ad space • paste AdSense code here after approval</div>
+    </div>
+
+    <main id="composer" class="card glass">
+      <h1>Send a pastel floating wish ✨</h1>
+      <p class="muted">Write a sweet note, choose a vibe, and share the link. No logins, no tracking bloat.</p>
+
+      <form id="form" class="grid">
+        <label>To
+          <input id="to" maxlength="40" placeholder="Sam" />
+        </label>
+        <label>Your message
+          <textarea id="msg" rows="4" maxlength="240" placeholder="You make my days blossom."></textarea>
+        </label>
+        <label>From
+          <input id="from" maxlength="40" placeholder="— Alex" />
+        </label>
+
+        <div class="row">
+          <label>Theme
+            <select id="theme">
+              <option value="sakura">Sakura (Pastels)</option>
+              <option value="sakura-dawn">Sakura Dawn</option>
+              <option value="sakura-twilight">Sakura Twilight</option>
+              <option value="pearl-sky">Pearl Sky</option>
+            </select>
+          </label>
+          <label>Lantern
+            <select id="lantern">
+              <option value="peach">Peach</option>
+              <option value="blush">Blush</option>
+              <option value="sage">Sage</option>
+              <option value="lilac">Lilac</option>
+              <option value="pearl">Pearl</option>
+            </select>
+          </label>
+          <label>Extras
+            <select id="extras">
+              <option value="petals">Sakura Petals</option>
+              <option value="sparks">Sparks</option>
+              <option value="stars">Stars</option>
+              <option value="none">None</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="preview" class="primary">Preview</button>
+          <button type="submit" class="accent">Get shareable link</button>
+        </div>
+      </form>
+    </main>
+
+    <section id="stage" class="stage hidden" aria-live="polite">
+      <div id="sky" class="sky theme-sakura"></div>
+      <div id="messageCard" class="message-card glass hidden" role="dialog" aria-modal="true">
+        <div class="tofrom"><span id="toText"></span></div>
+        <p id="msgText"></p>
+        <div class="tofrom right"><span id="fromText"></span></div>
+        <div class="actions center">
+          <button id="share" class="primary small">Share</button>
+          <button id="back" class="ghost small">Back</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Made with 🌸 by you • <a href="privacy.html">Privacy</a></span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
