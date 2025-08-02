@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sakura Lanterns — Send a Pastel Floating Wish</title>
-  <meta name="description" content="Create a pastel sky lantern with sakura petals and share a link. Aesthetic, clean, and free." />
+  <title>Sakura Lanterns — Floating Wishes</title>
+  <meta name="description" content="Colorful pastel sky, glowing lanterns, and sakura petals. Create & share a floating wish." />
+  <meta property="og:title" content="Sakura Lanterns — Floating Wishes" />
+  <meta property="og:description" content="Send a pastel sky lantern with sakura petals as a shareable link." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Ctext y='0.9em' font-size='52'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 
-  <!-- AdSense placeholder (uncomment after approval and replace IDs) -->
+  <!-- AdSense (enable after approval: replace IDs and UNCOMMENT) -->
   <!--
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-CLIENT-ID" crossorigin="anonymous"></script>
   -->
@@ -22,8 +25,15 @@
       <button id="createBtn" class="ghost small hidden">Create your own</button>
     </header>
 
-    <!-- Aesthetic ad area (paste AdSense code here after approval) -->
+    <!-- Ad area: shows a cute placeholder until AdSense is enabled -->
     <div class="ad-frame" aria-label="Advertisement">
+      <!-- Remove this placeholder after you paste AdSense unit below -->
+      <div class="ad-placeholder">
+        <div class="ad-pill">Your ad can appear here</div>
+        <div class="ad-sub">Paste your AdSense code once approved</div>
+      </div>
+
+      <!-- AdSense unit (uncomment & replace IDs when ready) -->
       <!--
       <ins class="adsbygoogle"
            style="display:block"
@@ -33,12 +43,11 @@
            data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       -->
-      <div class="ad-placeholder">Ad space • paste AdSense code here after approval</div>
     </div>
 
     <main id="composer" class="card glass">
-      <h1>Send a pastel floating wish ✨</h1>
-      <p class="muted">Write a sweet note, choose a vibe, and share the link. No logins, no tracking bloat.</p>
+      <h1>Make a colorful floating wish ✨</h1>
+      <p class="muted">Pick a theme, write your note, and share the link. No sign-in, no backend.</p>
 
       <form id="form" class="grid">
         <label>To
@@ -55,9 +64,9 @@
           <label>Theme
             <select id="theme">
               <option value="sakura">Sakura (Pastels)</option>
-              <option value="sakura-dawn">Sakura Dawn</option>
-              <option value="sakura-twilight">Sakura Twilight</option>
-              <option value="pearl-sky">Pearl Sky</option>
+              <option value="aurora">Aurora Candy</option>
+              <option value="peach">Peach Sunrise</option>
+              <option value="lilac">Lilac Twilight</option>
             </select>
           </label>
           <label>Lantern
@@ -87,7 +96,13 @@
     </main>
 
     <section id="stage" class="stage hidden" aria-live="polite">
-      <div id="sky" class="sky theme-sakura"></div>
+      <div id="sky" class="sky theme-sakura">
+        <!-- layers for parallax -->
+        <div class="sky-grad"></div>
+        <div class="sky-stars"></div>
+        <div class="sky-glow"></div>
+      </div>
+
       <div id="messageCard" class="message-card glass hidden" role="dialog" aria-modal="true">
         <div class="tofrom"><span id="toText"></span></div>
         <p id="msgText"></p>
