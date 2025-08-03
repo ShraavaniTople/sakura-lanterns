@@ -1,14 +1,14 @@
 # Sakura Lanterns
 
 Create and share a colorful digital sky lantern with sakura petals.  
-Fully front-end (no backend): messages are encoded in the URL (`?d=...`).
+Fully front end (no backend): messages are encoded in the URL (`?d=...`).
 
 ## Features
 - Animated pastel sky with glowing lanterns
 - Sakura petals or spark particle effects
 - Multiple themes and lantern colors
 - Shareable link (data stored in the URL)
-- Mobile-friendly and fast
+- Mobile friendly and fast
 
 ## Tech
 - HTML, CSS, vanilla JavaScript
@@ -19,7 +19,7 @@ Fully front-end (no backend): messages are encoded in the URL (`?d=...`).
 ```bash
 # Clone your repo
 git clone https://github.com/ShraavaniTople/sakura-lanterns.git
-cd sakura-lanterns
+cd sakura lanterns
 
 # Start local server
 python3 -m http.server 5173
