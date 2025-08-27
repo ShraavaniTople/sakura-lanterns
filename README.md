@@ -15,7 +15,7 @@ Check out https://shraavanitople.github.io/sakura-lanterns/
 - HTML, CSS, vanilla JavaScript
 - No frameworks or build tools
 - Works on any static host (GitHub Pages, Netlify, Vercel)
-
+  
 ## Local Development
 ```bash
 # Clone your repo
